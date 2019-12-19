@@ -1,0 +1,11 @@
+zuul:
+  ignoredServices: '*'
+  sensitive-headers: true
+  ignored-headers: Access-Control-Allow-Credentials, Access-Control-Allow-Origin
+  routes:
+    task:
+      path: /task-service/**
+      serviceId: task-service
+    user:
+      path: /user-service/**
+      serviceId: user-service

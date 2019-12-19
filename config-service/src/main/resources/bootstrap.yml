@@ -1,0 +1,7 @@
+spring:
+  profiles:
+    active: native
+  cloud:
+    config:
+      username: amanda
+      password: amanda
